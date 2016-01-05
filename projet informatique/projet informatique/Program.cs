@@ -24,19 +24,19 @@ namespace projet_informatique
         {
 
             string[][] Clavier = new string[13][]; // Création du tableau de tableau
-                    Clavier[1] = new string[11]{".",",", "-", "?", "!", "", ":", "(", ")", "/", "1"};
-                    Clavier[2] = new string[9];
-                    Clavier[3] = new string[6];
-                    Clavier[4] = new string[5];
-                    Clavier[5] = new string[4];
-                    Clavier[6] = new string[8];
-                    Clavier[7] = new string[5];
-                    Clavier[8] = new string[6];
-                    Clavier[9] = new string[5];
-                    Clavier[10] = new string[1];
-                    Clavier[11] = new string[1];
-                    Clavier[12] = new string[11];
-                    Clavier[13] = new string[2];
+                    Clavier[1] = new string[]{".",",", "-", "?", "!", "", ":", "(", ")", "/", "1"};
+                    Clavier[2] = new string[]{"a", "b", "c", "à", "ä", "ç", "2"};
+                    Clavier[3] = new string[]{"d", "e", "f", "è", "é", "3"};
+                    Clavier[4] = new string[]{"g", "h", "i", "4"};
+                    Clavier[5] = new string[]{"j", "k", "l", "5"};
+                    Clavier[6] = new string[]{"m", "n", "o","ñ", "ö",  "6"};
+                    Clavier[7] = new string[]{"p", "q", "r", "s", "7"};
+                    Clavier[8] = new string[]{"t", "u", "v", "ù", "ü", "8"};
+                    Clavier[9] = new string[]{"w", "x", "y", "z", "9"};
+                    Clavier[10] = new string[]{"0"};
+                    Clavier[11] = new string[]{" "};
+                    Clavier[12] = new string[]{};
+                    Clavier[13] = new string[]{};
 
             }
             
