@@ -76,6 +76,17 @@ namespace projet_informatique
 			}
 			for (int i =0; i<SmsTab.Length; i++)
 				Console.WriteLine(SmsTab[i]);
+
+            //Comparaison entre le tableau d'entrée et le double tableau
+            int j = 0;
+            int l = 0;
+            while (l < Clavier.Length)
+            {
+                if (SmsTab[j] = Clavier[0,l])
+                {
+
+                }
+            }
 			/*if (message == "multi_tap")
 				multi_tap (sms);
 			if (message == "t9")

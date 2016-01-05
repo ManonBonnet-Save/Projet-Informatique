@@ -11,3 +11,4 @@ C:\Users\user\Documents\GitHub\Projet-Informatique\projet informatique\projet in
 C:\Users\user\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.exe
 C:\Users\user\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.pdb
+C:\Users\lrenau911e\Desktop\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.csprojResolveAssemblyReference.cache
