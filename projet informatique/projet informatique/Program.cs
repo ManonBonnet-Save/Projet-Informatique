@@ -38,7 +38,7 @@ namespace projet_informatique
                     Clavier[12] = new string[]{};
                     Clavier[13] = new string[]{};
 
-            }
+            
             
 
 
