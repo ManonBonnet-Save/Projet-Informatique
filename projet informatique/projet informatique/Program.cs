@@ -23,13 +23,27 @@ namespace projet_informatique
         static void Main(string[] args)
         {
 
-            string[][] Clavier = new string[13][];
-            for (int i = 0; i < Clavier.Length; i++)
-            {
-                Clavier[i] = new string[4];
+            string[][] Clavier = new string[13][]; // Création du tableau de tableau
+                    Clavier[1] = new string[11];
+                    Clavier[2] = new string[9];
+                    Clavier[3] = new string[6];
+                    Clavier[4] = new string[5];
+                    Clavier[5] = new string[4];
+                    Clavier[6] = new string[8];
+                    Clavier[7] = new string[5];
+                    Clavier[8] = new string[6];
+                    Clavier[9] = new string[5];
+                    Clavier[10] = new string[1];
+                    Clavier[11] = new string[1];
+                    Clavier[12] = new string[11];
+                    Clavier[13] = new string[2];
+
+               
+
+                
 
             }
-
+            
 
 
             /*int i = 0;
@@ -42,7 +56,7 @@ namespace projet_informatique
             
             
             string sms;
-			Console.WriteLine ("Veuillez entrer un mode de saisie intuitive: (multi_tap ou t9)");
+			Console.WriteLine("Veuillez entrer un mode de saisie intuitive: (multi_tap ou t9)");
 			string message = Console.ReadLine ();
 
 			bool saisieCorrecte = false;
