@@ -38,10 +38,6 @@ namespace projet_informatique
                     Clavier[12] = new string[11];
                     Clavier[13] = new string[2];
 
-               
-
-                
-
             }
             
 
