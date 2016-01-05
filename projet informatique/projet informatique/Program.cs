@@ -52,12 +52,11 @@ namespace projet_informatique
             
             
             string sms;
-			Console.WriteLine("Veuillez entrer un mode de saisie intuitive: (multi_tap ou t9)");
-			string message = Console.ReadLine ();
+			//Console.WriteLine("Veuillez entrer un mode de saisie intuitive: (multi_tap ou t9)");
+			string message="";
 
 			bool saisieCorrecte = false;
 			while (!saisieCorrecte) {
-				messageErreur ();
 				Console.WriteLine ("Veuillez entrer un mode de saisie intuitive: (multi_tap ou t9)");
 				message = Console.ReadLine ();
 				if (message != "multi_tap" && message != "t9")
