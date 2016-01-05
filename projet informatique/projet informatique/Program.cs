@@ -24,7 +24,7 @@ namespace projet_informatique
         {
 
             string[][] Clavier = new string[13][]; // Création du tableau de tableau
-                    Clavier[1] = new string[11];
+                    Clavier[1] = new string[11]{".",",", "-", "?", "!", "", ":", "(", ")", "/", "1"};
                     Clavier[2] = new string[9];
                     Clavier[3] = new string[6];
                     Clavier[4] = new string[5];
