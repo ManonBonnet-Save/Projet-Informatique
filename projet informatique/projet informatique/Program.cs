@@ -32,13 +32,13 @@ namespace projet_informatique
 
 
 
-            int i = 0;
+            /*int i = 0;
             while (i<=4)
             {
                 Console.Write(Caractères[i]);
                 if (i == 4)
                     i = 0;
-            }
+            }*/
             
             
             string sms;
