@@ -23,7 +23,7 @@ namespace projet_informatique
         static void Main(string[] args)
         {
 
-            string[][] Clavier = new string[13][]; // Création du tableau de tableau
+            string[][] Clavier = new string[14][]; // Création du tableau de tableau
                     Clavier[1] = new string[]{".",",", "-", "?", "!", "", ":", "(", ")", "/", "1"};
                     Clavier[2] = new string[]{"a", "b", "c", "à", "ä", "ç", "2"};
                     Clavier[3] = new string[]{"d", "e", "f", "è", "é", "3"};
@@ -35,8 +35,8 @@ namespace projet_informatique
                     Clavier[9] = new string[]{"w", "x", "y", "z", "9"};
                     Clavier[10] = new string[]{"0"};
                     Clavier[11] = new string[]{" "};
-                    Clavier[12] = new string[]{};
-                    Clavier[13] = new string[]{};
+                    Clavier[12] = new string[]{"1"};
+                    Clavier[13] = new string[]{"1"};
 
             
             

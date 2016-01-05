@@ -2,3 +2,7 @@ C:\Users\lrenau911e\Projet-Informatique\projet informatique\projet informatique\
 C:\Users\lrenau911e\Projet-Informatique\projet informatique\projet informatique\bin\Debug\projet informatique.pdb
 C:\Users\lrenau911e\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.exe
 C:\Users\lrenau911e\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.pdb
+C:\Users\lrenau911e\Desktop\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.exe
+C:\Users\lrenau911e\Desktop\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.pdb
+C:\Users\lrenau911e\Desktop\GitHub\Projet-Informatique\projet informatique\projet informatique\bin\Debug\projet informatique.exe
+C:\Users\lrenau911e\Desktop\GitHub\Projet-Informatique\projet informatique\projet informatique\bin\Debug\projet informatique.pdb
