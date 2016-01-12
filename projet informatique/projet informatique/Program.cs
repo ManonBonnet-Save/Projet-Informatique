@@ -117,12 +117,18 @@ namespace projet_informatique
 			Console.WriteLine ("%%%%");
 
 			for (int t = 0; t < SmsTab.Length; t++) {
+                          bool repetition = false;
+            if (SmsTab[t] == SmsTab[t + 1])
+                repetition = true;
+            while (!repetition)
+                j++; 
+                /*
 				for (int n = 0; n < SmsTab.Length - 1; n++) {
 					if (SmsTab [n] == SmsTab [n + 1]) {
 						j++;
 					}
-				}
-
+				}*/
+                Console.WriteLine(j);
 				for (int n = 0; n < SmsTab.Length; n++) {
 					if (SmsTab [n] == "0") {
 						retranscrit [n] = touche0 [j];
