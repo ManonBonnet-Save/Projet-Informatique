@@ -20,7 +20,7 @@ namespace projet_informatique
 			Console.WriteLine ("Votre saisie est incorrecte");
 		}
 
-		public class EnumClavier
+		/*public class EnumClavier
 		{
 			string[] touche1 = new string[] {".",",","-", "?", "!", "@", ":", "(", ")", "/", "1"};
 			string[] touche2 = new string[] {"a", "b", "c", "à", "ä", "ç", "2"};
@@ -34,7 +34,7 @@ namespace projet_informatique
 			string[] touche0  = new string[]{"0"};
 			string[] space = new string[]{" "};
 			string[] diese = new string[]{"1"};
-			string[] etoile = new string[]{"1"};
+			string[] etoile = new string[]{"1"};*/
 
 			static void Main(string[] args)
 			{
@@ -54,8 +54,21 @@ namespace projet_informatique
 			Clavier[12] = new string[]{"1"};
 			Clavier[13] = new string[]{"1"};*/
 
-
-
+                string[] touche1 = new string[] {".",",","-", "?", "!", "@", ":", "(", ")", "/", "1"};
+			string[] touche2 = new string[] {"a", "b", "c", "à", "ä", "ç", "2"};
+			string [] touche3 = new string[]{"d", "e", "f", "è", "é", "3"};
+			string[] touche4 = new string[]{"g", "h", "i", "4"};
+			string[] touche5 = new string[]{"j", "k", "l", "5"};
+			string[] touche6 = new string[]{"m", "n", "o","ñ", "ö",  "6"};
+			string[] touche7 = new string[]{"p", "q", "r", "s", "7"};
+			string[] touche8 = new string[]{"t", "u", "v", "ù", "ü", "8"};
+			string[] touche9 = new string[] {"w", "x", "y", "z", "9"};
+			string[] touche0  = new string[]{"0"};
+			string[] space = new string[]{" "};
+			string[] diese = new string[]{"1"};
+			string[] etoile = new string[]{"1"};
+                string[][] Clavier =
+                {touche1,touche2,touche3,touche4,touche5,touche6,touche7,touche8,touche9,touche0,space, diese, etoile};
 
 
 
@@ -89,18 +102,36 @@ namespace projet_informatique
 				int LongueurSms = sms.Length;
 
 				string[] SmsTab = new string[LongueurSms];
-				for (int i = 0; i < SmsTab.Length; i++) {
+				for (int i = 0; i < SmsTab.Length; i++) 
+                {
 					string Car = sms.Substring (i, 1);
 					SmsTab [i] = Car;
 
 					for (int n = 0; n<SmsTab.Length;n++)
 					{
-						if (Car[i] = Clavier[n][]) //&& Car[i] = "2" && Car [i] = "3" || Car [i] = "4" || Car [i] = "5" || Car [i] = "6" || Car [i] = "7" || Car [i] = "8" || Car [i] = "9" || Car [i] = "0" || Car [i] = "*" || Car [i] = "#"*/)
-							messageErreur ();
+						for (int p = 0; p<Clavier.Length; p++)
+                        {
+                        if (Car[n] = Clavier[p][j])
+                        {}//&& Car[i] = "2" && Car [i] = "3" || Car [i] = "4" || Car [i] = "5" || Car [i] = "6" || Car [i] = "7" || Car [i] = "8" || Car [i] = "9" || Car [i] = "0" || Car [i] = "*" || Car [i] = "#"*/)
+							//messageErreur ();
+                        }
 					}
+
+                    // Recherche bon caractère
+                int j =0;
+                int z=0;
+                while (Car[z]==Car[z+1])
+                {
+                    j++;
+
+                }
+                
+                string lettre= Clavier{touche3[j]};
 				}
 				for (int i =0; i<SmsTab.Length; i++)
 					Console.WriteLine(SmsTab[i]);
+
+                
 
 				//Comparaison entre le tableau d'entrée et le double tableau
 				int j = 0;
