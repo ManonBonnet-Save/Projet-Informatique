@@ -116,63 +116,80 @@ namespace projet_informatique
 
 			Console.WriteLine ("%%%%");
 
-			for (int t = 0; t < SmsTab.Length; t++) {
-                          bool repetition = false;
-            if (SmsTab[t] == SmsTab[t + 1])
-                repetition = true;
-            while (!repetition)
-                j++; 
-                /*
+			int h = 0;
+			int[] position = new int[LongueurSms+1];
+			foreach (string k in SmsTab) {
+				Console.WriteLine ("Nouveau K" + k);
+
+				string a = SmsTab [h];
+				string b;
+				if (h == LongueurSms-1)
+					b = "0";
+				else
+					b = SmsTab [h + 1];
+				Console.WriteLine (a + b);
+				if (a == b && h < SmsTab.Length) {
+					j = j + 1;
+					position [h] = j;
+				}
+				else {
+					position[h] = j;
+					j = 0;
+				}
+				h++;	
+				Console.WriteLine (j + "*" + h + "§" + position[h]);
+			}
+			/*
 				for (int n = 0; n < SmsTab.Length - 1; n++) {
 					if (SmsTab [n] == SmsTab [n + 1]) {
 						j++;
 					}
 				}*/
-                Console.WriteLine(j);
-				for (int n = 0; n < SmsTab.Length; n++) {
-					if (SmsTab [n] == "0") {
-						retranscrit [n] = touche0 [j];
-					}
-					if (SmsTab [n] == "1") {
-						retranscrit [n] = touche1 [j];
-					}
-					if (SmsTab [n] == "2") {
-						retranscrit [n] = touche2 [j];
-					}
-					if (SmsTab [n] == "3") {
-						retranscrit [n] = touche3 [j];
-					}
-					if (SmsTab [n] == "4") {
-						retranscrit [n] = touche4 [j];
-					}
-					if (SmsTab [n] == "5") {
-						retranscrit [n] = touche5 [j];
-					}
-					if (SmsTab [n] == "6") {
-						retranscrit [n] = touche6 [j];
-					}
-					if (SmsTab [n] == "7") {
-						retranscrit [n] = touche7 [j];
-					}
-					if (SmsTab [n] == "8") {
-						retranscrit [n] = touche8 [j];
-					}
-					if (SmsTab [n] == "9") {
-						retranscrit [n] = touche9 [j];
-					}
-					if (SmsTab [n] == "*") {
-						retranscrit [n] = etoile [j];
-					}
-					if (SmsTab [n] == "#") {
-						retranscrit [n] = diese [j];
-					}
-					if (SmsTab [n] == " ") {
-						retranscrit [n] = space [j];
-					}
+
+			for (int n = 0; n < SmsTab.Length; n++) {
+				if (SmsTab [n] == "0") {
+					retranscrit [n] = touche0 [position[n]];
 				}
-				j = 0;
-				Console.Write (retranscrit [t]);
+				if (SmsTab [n] == "1") {
+					retranscrit [n] = touche1 [position[n]];
+				}
+				if (SmsTab [n] == "2") {
+					retranscrit [n] = touche2 [position[n]];
+				}
+				if (SmsTab [n] == "3") {
+					retranscrit [n] = touche3 [position[n]];
+				}
+				if (SmsTab [n] == "4") {
+					retranscrit [n] = touche4 [position[n]];
+				}
+				if (SmsTab [n] == "5") {
+					retranscrit [n] = touche5 [position[n]];
+				}
+				if (SmsTab [n] == "6") {
+					retranscrit [n] = touche6 [position[n]];
+				}
+				if (SmsTab [n] == "7") {
+					retranscrit [n] = touche7 [position[n]];
+				}
+				if (SmsTab [n] == "8") {
+					retranscrit [n] = touche8 [position[n]];
+				}
+				if (SmsTab [n] == "9") {
+					retranscrit [n] = touche9 [position[n]];
+				}
+				if (SmsTab [n] == "*") {
+					retranscrit [n] = etoile [position[n]];
+				}
+				if (SmsTab [n] == "#") {
+					retranscrit [n] = diese [position[n]];
+				}
+				if (SmsTab [n] == " ") {
+					retranscrit [n] = space [position[n]];
+				}
 			}
+			j = 0;
+			//Console.Write (retranscrit [k]);
+			//}
 			// Recherche bon caractère
 
 
