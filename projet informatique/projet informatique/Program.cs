@@ -92,6 +92,66 @@ namespace projet_informatique
                 previous = v;
             }
         }
+        public static void T9()
+        {
+            string[] lettre = new string[] { " ", "PQRS1", "TUVùü2", "WXYZ3", "GHI4", "JKL5", "MNOñö6", ".,-?!@:()/7", "ABCàäç8", "DEFèé9" };
+            int count = 0;
+            int previous = -1;
+            string result = "";
+            while (true)
+            {
+                //Rewrite everything to refresh
+                Console.Clear();
+                Console.WriteLine("_ _ _ _ _ _ _ _ _ _ _ _ _ ");
+                Console.WriteLine("|   7   |   8   |    9   |");
+                Console.WriteLine("|  .,   |  ABC  |   DEF  |");
+                Console.WriteLine("_ _ _ _ _ _ _ _ _ _ _ _ _ ");
+                Console.WriteLine("|   4   |   5   |    6   |");
+                Console.WriteLine("|  GHI  |  JKL  |   MNO  |");
+                Console.WriteLine("_ _ _ _ _ _ _ _ _ _ _ _ _ ");
+                Console.WriteLine("|   1   |   2   |    3   |");
+                Console.WriteLine("| PQRS  |  TUV  |   WXYZ |");
+                Console.WriteLine("_ _ _ _ _ _ _ _ _ _ _ _ _ ");
+                Console.WriteLine("|           0            |");
+                Console.WriteLine("|           _           `|");
+                Console.WriteLine("_ _ _ _ _ _ _ _ _ _ _ _ _ ");
+
+                Console.WriteLine("Tapez sur le pavé numérique jusqu'à la mort ou 'q' pour quitter");
+                Console.WriteLine("\n" + result);
+
+                //Most important thing !!!
+                ConsoleKeyInfo cki = Console.ReadKey();
+
+                //If the user press q, close the console
+                if (cki.KeyChar == 'q') break;
+
+                //Uses to permit to letter on a same number
+                if (cki.KeyChar == 's')
+                {
+                    count = 0;
+                    previous = -1;
+                    continue;
+                }
+
+                //Todo ensure the entry is a number
+
+                //If this point is reached, the text will change
+                int v = ToInt(cki.KeyChar);
+                if (previous == v) //Change the last letter
+                {
+                    count++;
+                    result = ReplaceAt(result, result.Length - 1, lettre[v][count]);
+                }
+                else //New letter is add
+                {
+                    count = 0;
+                    result += lettre[v][count];
+                }
+
+                //Need to know what is the last input
+                previous = v;
+            }
+        }
 
         public static void ouvrirFichier(string fichier)
         {
