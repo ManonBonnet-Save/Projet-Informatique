@@ -17,3 +17,8 @@ C:\Users\lrenau911e\Desktop\Projet-Informatique\projet informatique\projet infor
 C:\Users\lrenau911e\Desktop\Projet-Informatique\projet informatique\projet informatique\bin\Debug\projet informatique.exe
 C:\Users\lrenau911e\Desktop\Projet-Informatique\projet informatique\projet informatique\bin\Debug\projet informatique.pdb
 C:\Users\lrenau911e\Desktop\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.csprojResolveAssemblyReference.cache
+C:\Users\renau_000\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.exe
+C:\Users\renau_000\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.pdb
+C:\Users\renau_000\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\bin\Debug\projet informatique.exe
+C:\Users\renau_000\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\bin\Debug\projet informatique.pdb
+C:\Users\renau_000\Documents\GitHub\Projet-Informatique\projet informatique\projet informatique\obj\x86\Debug\projet informatique.csprojResolveAssemblyReference.cache
