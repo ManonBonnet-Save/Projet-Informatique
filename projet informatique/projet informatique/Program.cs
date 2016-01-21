@@ -84,6 +84,16 @@ namespace projet_informatique
                     continue;
                 }
 
+                int v = ToInt(cki.KeyChar);
+                //Used to erase a letter
+                if (cki.KeyChar == 'e' && result.Length > 0)
+                {
+                    result = result.Remove(result.Length - 1, 1);
+                    count = 0;
+                    previous = v;
+                    continue;
+                }
+
                 //Todo ensure the entry is a number
                 //if (cki.KeyChar != lettre[v])
                 //{
@@ -92,7 +102,7 @@ namespace projet_informatique
 
 
                 //If this point is reached, the text will change
-                int v = ToInt(cki.KeyChar);
+
                 if (previous == v) //Change the last letter
                 {
                     count++;
@@ -104,12 +114,6 @@ namespace projet_informatique
                 {
                     count = 0;
                     result += lettre[v][count];
-                }
-
-                //Used to erase a letter
-                if (cki.KeyChar == 'e')
-                {
-                    //result = result - lettre[v][count];
                 }
 
                 //Need to know what is the last input
@@ -185,6 +189,11 @@ namespace projet_informatique
                 }
 
                 int v = ToInt(cki.KeyChar);
+
+                //if (cki.KeyChar == 'e' && result.Length > 0)
+                //{
+                //    result = result.Remove(result.Length - 1, 1);
+                //}
 
                 if (v == 0)
                 {
